@@ -20,3 +20,8 @@ Train of thought:
 •	Present a write up and code
 •	Well organised and detailed explanations
 •	Well conceived and examples of interesting analysis that others have pursued
+
+
+
+References: 
+https://archive.ics.uci.edu/ml/datasets/Iris
