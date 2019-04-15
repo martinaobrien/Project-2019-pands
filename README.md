@@ -10,7 +10,9 @@ Using Fisher's Iris data set, research and using Python programme, document and 
 ##### Prerequisites for the Project
 
 For this project,  the following programmes were installed: 
- 
+ - Visual Studio Code with Python packages
+ - Anaconda
+
 
 You need to 
 1.	Research ways to tackle the project
