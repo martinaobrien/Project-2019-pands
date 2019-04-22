@@ -40,3 +40,5 @@ Train of thought:
 
 #### References: 
 https://archive.ics.uci.edu/ml/datasets/Iris
+https://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dsintro
+https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html
