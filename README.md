@@ -1,26 +1,27 @@
 ##### Project-2019-pands
 
 #### Objective of the Project
-Using the well known Fisher Iris Dataset, research, investigate and summarise using Python programming to extract key statistics and trends from the set. 
+Using the well known Fisher Iris Dataset, research, investigate and summarise using Python programming to extract key statistics and trends from the set.
 
 #### Background Information to the Project
-The Iris Flower DataSet was collected in 1939 by Edgar Anderson and analysed by Ronald Fisher in his paper "The use of multiple measurements in taxonomic problem" to investigate the classification and organisation of key attributes of three species of Iris flower(i). Using three species of Iris: virginica, sertosa and versicolor, the dataset captures data on four charateristics of each of the three species (ii).  
+The Iris Flower DataSet was collected in 1939 by Edgar Anderson and analysed by Ronald Fisher in his paper "The use of multiple measurements in taxonomic problem" (i) to investigate the classification and organisation of key attributes of three species of Iris flower(ii). Using three species of Iris: virginica, sertosa and versicolor, the dataset captures data on four charateristics of each of the three species (iii).  
 
 In total the dataset contains 50 types of each of the 3 species, 150 samples in total. The data distribution is 50 sampples per identified species. The order in which the measurements were taken are sepal length, sepal width, petal length and petal width.
-Two species of the data set were collected in the Gasle Pennisula, Quebec Canada by the same person, on the same day and analysed using the same apparatus (iii). Below is a picture of the images of each of the flowers captured in the dataset
+Two species of the data set were collected in the Gasle Pennisula, Quebec Canada by the same person, on the same day and analysed using the same apparatus (iv). Below is a picture of the images of each of the flowers captured in the dataset. This link to the picture can be found in the References section (v)
  
  ![ALT Our Subjects](https://payatu.com/wp-content/uploads/2018/04/Selection_004.png)
 
 ##### Prerequisites for the Project
 
-For this project,  the following programmes were installed: 
- - Visual Studio Code with Python packages
- - Anaconda
+Using python programming tools, this project will analyse, summise and visualise key invetigates using a number of packages. These include: 
+  pandas - Installed from: https://anaconda.org/anaconda/pandas
+  matplotlib - Installed from: https://anaconda.org/conda-forge/matplotlib
+  
+##### Investigations on the Iris Data Set:
  
- ##### Investigations on the Iris Data Set: 
- 
- ##### Two Dimensional Array Investigations on the Iris Data Set
- A two dimensional array in python is an "array within an array... the position of an data element is referred to by two indices rather than one" (Tutorialpoint:2018). This approach was applied to the python programme used to investigate this data set because of it ease of use and understanding of ouput for the user. The following investigations were conducted using the two dimensional array.
+Importing the dataset: 
+The dataset was imported using the pandas module as a csv file (vi). The dataset was imported into this repository for this project. Several investigations were carried out to provide an insight in the dataset. The data is visulaised using tables and bar charts initially to provide the user with a high level overview of the dataset. The latter graphics include scatterplots and dotplots that provide a much more indepth view. 
+
  
  Program - Describe key statistical feature of the data. 
 Using the describe function, the program investigates the folowing features of the numerical data for sepal length, sepal width, petal length, petal width:
@@ -68,12 +69,15 @@ Train of thought:
 
 
 #### References: 
+http://rcs.chemometrics.ru/Tutorials/classification/Fisher.pdf
+https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342
+http://archive.ics.uci.edu/ml/datasets/Iris
+https://www.ritchieng.com/machine-learning-iris-dataset/
+https://payatu.com/wp-content/uploads/2018/04/Selection_004.png
+https://www.dataquest.io/blog/pandas-python-tutorial/
 
-i https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342
 
-ii http://archive.ics.uci.edu/ml/datasets/Iris
 
-iii https://www.ritchieng.com/machine-learning-iris-dataset/
 
 http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf
 
