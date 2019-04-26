@@ -19,8 +19,24 @@ For this project,  the following programmes were installed:
  
  ##### Investigations on the Iris Data Set: 
  
- ##### Two Dimensional Investigations
- A two dimensional array in python
+ ##### Two Dimensional Array Investigations on the Iris Data Set
+ A two dimensional array in python is an "array within an array... the position of an data element is referred to by two indices rather than one" (Tutorialpoint:2018). This approach was applied to the python programme used to investigate this data set because of it ease of use and understanding of ouput for the user. The following investigations were conducted using the two dimensional array.
+ 
+ Program - Describe key statistical feature of the data. 
+Using the describe function, the program investigates the folowing features of the numerical data for sepal length, sepal width, petal length, petal width:
+1. count
+2. mean of each column
+3. standard deviation
+4. minimum value in each column
+
+count    150.000000   150.000000    150.000000   150.000000
+mean       5.843333     3.054000      3.758667     1.198667
+std        0.828066     0.433594      1.764420     0.763161
+min        4.300000     2.000000      1.000000     0.100000
+25%        5.100000     2.800000      1.600000     0.300000
+50%        5.800000     3.000000      4.350000     1.300000
+75%        6.400000     3.300000      5.100000     1.800000
+max
  
  ###### Three Dimensional Investigations
  
@@ -60,3 +76,7 @@ http://mirlab.org/jang/books/dcpr/dataSetIris.asp?title=2-2%20Iris%20Dataset
 https://shapeofdata.wordpress.com/2013/10/01/case-study-1-iris/
 http://cmdlinetips.com/2018/02/how-to-randomly-select-rows-in-pandas-pandas-tutorial/
 https://shapeofdata.wordpress.com/2013/04/09/principle-component-analysis/
+https://www.researchgate.net/publication/237010807_What_should_we_know_about_the_famous_Iris_data/download
+https://www.tutorialspoint.com/python/python_2darray.htm
+https://snakify.org/en/lessons/two_dimensional_lists_arrays/problems/chessboard/
+https://www.tutorialspoint.com/python/python_2darray.htm
