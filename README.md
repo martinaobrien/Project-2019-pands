@@ -59,3 +59,4 @@ https://www.datacamp.com/community/blog/python-pandas-cheat-sheet
 http://mirlab.org/jang/books/dcpr/dataSetIris.asp?title=2-2%20Iris%20Dataset
 https://shapeofdata.wordpress.com/2013/10/01/case-study-1-iris/
 http://cmdlinetips.com/2018/02/how-to-randomly-select-rows-in-pandas-pandas-tutorial/
+https://shapeofdata.wordpress.com/2013/04/09/principle-component-analysis/
