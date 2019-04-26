@@ -69,14 +69,33 @@ Train of thought:
 
 #### References: 
 https://archive.ics.uci.edu/ml/datasets/Iris
+
 https://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dsintro
+
 https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html
+
 https://www.datacamp.com/community/blog/python-pandas-cheat-sheet
+
 http://mirlab.org/jang/books/dcpr/dataSetIris.asp?title=2-2%20Iris%20Dataset
+
 https://shapeofdata.wordpress.com/2013/10/01/case-study-1-iris/
+
 http://cmdlinetips.com/2018/02/how-to-randomly-select-rows-in-pandas-pandas-tutorial/
+
 https://shapeofdata.wordpress.com/2013/04/09/principle-component-analysis/
+
 https://www.researchgate.net/publication/237010807_What_should_we_know_about_the_famous_Iris_data/download
+
 https://www.tutorialspoint.com/python/python_2darray.htm
+
 https://snakify.org/en/lessons/two_dimensional_lists_arrays/problems/chessboard/
+
 https://www.tutorialspoint.com/python/python_2darray.htm
+
+https://www.kaggle.com/lalitharajesh/iris-dataset-exploratory-data-analysis
+
+https://www.kaggle.com/sridharcr/data-analysis-iris-dataset
+
+https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342
+
+https://github.com/RitRa/Project2018-iris/blob/master/Project%2B2018%2B-%2BFishers%2BIris%2Bdata%2Bset%2Banalysis.py
