@@ -7,7 +7,7 @@ Using the well known Fisher Data set, research, investigate and summarise using 
 #### Background Information to the Project
 This well known dataset was collected in 1939 by Edgar Anderson consisting of three species of Iris: virginica, sertosa and versicolor.( http://archive.ics.uci.edu/ml/datasets/Iris). It contains data on the five characteristics of the three species: petal length, petal width, sepal length, sepal width and the classification of the flower type. 
 
-Two species of the data set were collected in the Gasle Pennisula, Quebec Canada by the same person, on the same day and analysed using the same apparatus. In total the dataset contains 50 types of each of the 3 species, 150 samples in total. The order in which the measurements were taken are sepal length, sepal width, petal length and petal width.  (https://www.ritchieng.com/machine-learning-iris-dataset/)
+Two species of the data set were collected in the Gasle Pennisula, Quebec Canada by the same person, on the same day and analysed using the same apparatus. In total the dataset contains 50 types of each of the 3 species, 150 samples in total. The data distribution is 50 sampples per identified species. The order in which the measurements were taken are sepal length, sepal width, petal length and petal width.  (https://www.ritchieng.com/machine-learning-iris-dataset/)
  
  ![ALT Our Subjects](https://payatu.com/wp-content/uploads/2018/04/Selection_004.png)
 
