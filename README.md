@@ -19,10 +19,10 @@ For this project,  the following programmes were installed:
  
  ##### Investigations on the Iris Data Set: 
  
- #### Two Dimensional Investigations
+ ##### Two Dimensional Investigations
+ A two dimensional array in python
  
- 
- #### Three Dimensional Investigations
+ ###### Three Dimensional Investigations
  
  
  
@@ -58,3 +58,4 @@ https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html
 https://www.datacamp.com/community/blog/python-pandas-cheat-sheet
 http://mirlab.org/jang/books/dcpr/dataSetIris.asp?title=2-2%20Iris%20Dataset
 https://shapeofdata.wordpress.com/2013/10/01/case-study-1-iris/
+http://cmdlinetips.com/2018/02/how-to-randomly-select-rows-in-pandas-pandas-tutorial/
