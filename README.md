@@ -1,13 +1,13 @@
-#### Project-2019-pands
-Using Fisher's Iris data set, research and using Python programme, document and conduct analysis the information investigated.
+##### Project-2019-pands
 
 #### Objective of the Project
-Using the well known Fisher Data set, research, investigate and summarise using Python programming to extract key statistics and trends from the set. 
+Using the well known Fisher Iris Dataset, research, investigate and summarise using Python programming to extract key statistics and trends from the set. 
 
 #### Background Information to the Project
-This well known dataset was collected in 1939 by Edgar Anderson consisting of three species of Iris: virginica, sertosa and versicolor.( http://archive.ics.uci.edu/ml/datasets/Iris). It contains data on the five characteristics of the three species: petal length, petal width, sepal length, sepal width and the classification of the flower type. 
+The Iris Flower DataSet was collected in 1939 by Edgar Anderson and analysed by Ronald Fisher in his paper "The use of multiple measurements in taxonomic problem" to investigate the classification and organisation of key attributes of three species of Iris flower(i). Using three species of Iris: virginica, sertosa and versicolor, the dataset captures data on four charateristics of each of the three species (ii).  
 
-Two species of the data set were collected in the Gasle Pennisula, Quebec Canada by the same person, on the same day and analysed using the same apparatus. In total the dataset contains 50 types of each of the 3 species, 150 samples in total. The data distribution is 50 sampples per identified species. The order in which the measurements were taken are sepal length, sepal width, petal length and petal width.  (https://www.ritchieng.com/machine-learning-iris-dataset/)
+In total the dataset contains 50 types of each of the 3 species, 150 samples in total. The data distribution is 50 sampples per identified species. The order in which the measurements were taken are sepal length, sepal width, petal length and petal width.
+Two species of the data set were collected in the Gasle Pennisula, Quebec Canada by the same person, on the same day and analysed using the same apparatus (iii). Below is a picture of the images of each of the flowers captured in the dataset
  
  ![ALT Our Subjects](https://payatu.com/wp-content/uploads/2018/04/Selection_004.png)
 
@@ -68,6 +68,15 @@ Train of thought:
 
 
 #### References: 
+
+i https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342
+
+ii http://archive.ics.uci.edu/ml/datasets/Iris
+
+iii https://www.ritchieng.com/machine-learning-iris-dataset/
+
+http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf
+
 https://archive.ics.uci.edu/ml/datasets/Iris
 
 https://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dsintro
@@ -99,3 +108,5 @@ https://www.kaggle.com/sridharcr/data-analysis-iris-dataset
 https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342
 
 https://github.com/RitRa/Project2018-iris/blob/master/Project%2B2018%2B-%2BFishers%2BIris%2Bdata%2Bset%2Banalysis.py
+
+( http://archive.ics.uci.edu/ml/datasets/Iris).
