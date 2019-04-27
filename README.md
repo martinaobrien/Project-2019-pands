@@ -25,8 +25,22 @@ Using python programming tools, this project will analyse, summise and visualise
 Importing the dataset: 
 The dataset was imported using the pandas module as a csv file (vi). The dataset was imported into this repository for this project. Several investigations were carried out to provide an insight in the dataset. The data is visulaised using tables and bar charts initially to provide the user with a high level overview of the dataset. The latter graphics include scatterplots and dotplots that provide a much more indepth view. 
 
- 
- Program - Describe key statistical feature of the data. 
+Initial Investigations: 
+The following is a list of investigations conducted on the Iris dataset. These are intended to inform the user about the contact and key attributes of the data using the shape function.
+
+Shape of the Iris Dataset - number of individual samples and the number of charateristics contained in the set and gives the highest level of information about the date using the random function.
+
+Overview of key statistics of the Irisset
+This table displays the following analysis for all of the data entries combined:
+Count - the total count of each value recorded. All counts are 150 representing a complete dataset and no null or void entries. 
+Mean - A measure of the centre for a distribution of a numeric variable. The total of all values divided bu the total number of values
+Standard deviation - a measure expressing the difference between numerical values and the mean of the category
+minimum, 25%, 50%, 75% maximum values - the corresponding values of each of the attributes in each column
+
+
+
+Random selection of the data - this table details the characteristics of 5 random data entries for the set for demonstrative purposes
+  
 Using the describe function, the program investigates the folowing features of the numerical data for sepal length, sepal width, petal length, petal width:
 1. count
 2. mean of each column
