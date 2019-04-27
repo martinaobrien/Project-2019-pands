@@ -13,7 +13,7 @@ Two species of the data set were collected in the Gasle Pennisula, Quebec Canada
 
 ##### Prerequisites for the Project
 
-Using python programming tools, this project will analyse, summise and visualise key invetigates using a number of packages. These include: 
+Using python programming tools, this project will analyse, summise and visualise key invetigates using a number of packages. These include (Python was installed through Anaconda so some packages were already av were avaiable to me): 
   pandas - Installed from: https://anaconda.org/anaconda/pandas
   
   matplotlib - Installed from: https://anaconda.org/conda-forge/matplotlib
@@ -45,13 +45,19 @@ minimum, 25%, 50%, 75% maximum values - the corresponding values of each of the 
 
 Median: A measure of the centre for a distribution of a numeric variable. It splits the data in half with half the observations above and below. 
 
-### Key points
-Mean and Median: 
-Initial analysis would suggest that the central points for the sepal length and sepal width are less than .1, suggesting the mean and median are quite similiar. The difference between the mean and median are more pronounced in the petal length and petal width, greater that .5.
+
 
 ##### Analysis and Summary of the Iris Dataset
 
-This project has examined the key statistics of the attributes for the Iris flower dataset such as the mean, median and standard deviation for all the data and also the individual species. Boxplots to further investigate how each distribution of the attributes (sepal length, sepal width, petal length and petal width) compared across the three species (iris sertosa, iris virginica, iris versicolor).  
+This project has examined the key statistics of the attributes for the Iris flower dataset such as the maximum, medium and standard deviation for all the data and also the individual species.The purpose of this project is to explore any distinctions betweek attributes and species that may exist that could be considered predictors in identfying the different types of species. 
+
+To investigate this further, the max and min functions were used to identify the flowers asscoiated with the data, allowing us to assume that sertosa will be among the smallest data entries collected and virgininca will be among the largest data entries collected. It is well documented that the iris-sertosa and iris-virginica has more distinguishable attributes than the iris-versicolor (vii). Using descriptive analysis, this pattern begins to emerge. 
+
+The mean and median of the attributes were also calculated as calculating the centre points for the data are important in exploing predictors. Initial analysis would suggest that the central points for the sepal length and sepal width are less than .1, suggesting the mean and median are quite similiar. The difference between the mean and median are more pronounced in the petal length and petal width, greater that .5. This suggests that the data on petal lengths and petal widths may prove to be more indicative of the data entries species. 
+
+Ascertaining the centre properties of each of the attributes for each species is central to establishing patterns. The next Boxplots to further investigate how each distribution of the attributes (sepal length, sepal width, petal length and petal width) compared across the three species (iris sertosa, iris virginica, iris versicolor). 
+
+
 
 
 You need to 
@@ -83,11 +89,13 @@ http://archive.ics.uci.edu/ml/datasets/Iris
 https://www.ritchieng.com/machine-learning-iris-dataset/
 https://payatu.com/wp-content/uploads/2018/04/Selection_004.png
 https://www.dataquest.io/blog/pandas-python-tutorial/
-
-
-
-
 http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf
+
+http://statweb.stanford.edu/~jtaylo/courses/stats202/visualization.html
+
+f
+
+https://www.shanelynn.ie/select-pandas-dataframe-rows-and-columns-using-iloc-loc-and-ix/
 
 https://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dsintro
 
@@ -120,3 +128,6 @@ https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-29
 https://github.com/RitRa/Project2018-iris/blob/master/Project%2B2018%2B-%2BFishers%2BIris%2Bdata%2Bset%2Banalysis.py
 
 ( http://archive.ics.uci.edu/ml/datasets/Iris).
+
+### Notes
+* Python was installed through Anaconda so some packages installed through Anaconda were already available to me
