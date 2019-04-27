@@ -49,7 +49,9 @@ Median: A measure of the centre for a distribution of a numeric variable. It spl
 
 ##### Analysis and Summary of the Iris Dataset
 
-This project has examined the key statistics of the attributes for the Iris flower dataset such as the maximum, medium and standard deviation for all the data and also the individual species. To investigate this further, the max and min functions were used to identify the flowers asscoiated with the data, allowing us to assume that sertosa will be among the smallest data entries collected and virgininca will be among the largest data entries collected. It is well documented that the iris-sertosa and iris-virginica has more distinguishable attributes than the iris-versicolor (vii). Using descriptive analysis, this pattern begins to emerge. 
+This project has examined the key statistics of the attributes for the Iris flower dataset such as the maximum, medium and standard deviation for all the data and also the individual species.The purpose of this project is to explore any distinctions betweek attributes and species that may exist that could be considered predictors in identfying the different types of species. 
+
+To investigate this further, the max and min functions were used to identify the flowers asscoiated with the data, allowing us to assume that sertosa will be among the smallest data entries collected and virgininca will be among the largest data entries collected. It is well documented that the iris-sertosa and iris-virginica has more distinguishable attributes than the iris-versicolor (vii). Using descriptive analysis, this pattern begins to emerge. 
 
 The mean and median of the attributes were also calculated as calculating the centre points for the data are important in exploing predictors. Initial analysis would suggest that the central points for the sepal length and sepal width are less than .1, suggesting the mean and median are quite similiar. The difference between the mean and median are more pronounced in the petal length and petal width, greater that .5. This suggests that the data on petal lengths and petal widths may prove to be more indicative of the data entries species. 
 
