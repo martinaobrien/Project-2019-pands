@@ -59,11 +59,14 @@ print(' ')
 print('------------------------------------------------------------------------------------------------------------')
 print(' ')
 
-print ('Maximum, Minimum and Mode of the Dataset')
+print ('Maximum and Minimum of the Dataset')
 df = iris_data
 print (df.max()) # will return max value of each column
 print (df.min())
-print (df.mode(0,4)) # will return max value of each row
+
+print(' ')
+print('------------------------------------------------------------------------------------------------------------')
+print(' ')
 
 #title="Compare the Distributions of Sepal Width"
 #sns.boxplot(x="iris", y="sepal width", data=iris_data)
