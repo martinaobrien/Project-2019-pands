@@ -16,6 +16,9 @@ Two species of the data set were collected in the Gasle Pennisula, Quebec Canada
 Using python programming tools, this project will analyse, summise and visualise key invetigates using a number of packages. These include: 
   pandas - Installed from: https://anaconda.org/anaconda/pandas
   matplotlib - Installed from: https://anaconda.org/conda-forge/matplotlib
+  numpy - Installed from: https://anaconda.org/anaconda/numpy
+  
+  Iris dataset ws downloaded from: http://www.saedsayad.com/datasets/Iris.xls. the file was then converted in to a .csv file for use in this project.
   
 ##### Investigations on the Iris Data Set:
  
