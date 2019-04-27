@@ -49,38 +49,17 @@ Median: A measure of the centre for a distribution of a numeric variable. It spl
 Mean and Median: 
 Initial analysis would suggest that the central points for the sepal length and sepal width are less than .1, suggesting the mean and median are quite similiar. The difference between the mean and median are more pronounced in the petal length and petal width, greater that .5.
 
+##### Analysis and Summary of the Iris Dataset
 
-
-Random selection of the data - this table details the characteristics of 5 random data entries for the set for demonstrative purposes
-  
-Using the describe function, the program investigates the folowing features of the numerical data for sepal length, sepal width, petal length, petal width:
-1. count
-2. mean of each column
-3. standard deviation
-4. minimum value in each column
-
-count    150.000000   150.000000    150.000000   150.000000
-mean       5.843333     3.054000      3.758667     1.198667
-std        0.828066     0.433594      1.764420     0.763161
-min        4.300000     2.000000      1.000000     0.100000
-25%        5.100000     2.800000      1.600000     0.300000
-50%        5.800000     3.000000      4.350000     1.300000
-75%        6.400000     3.300000      5.100000     1.800000
-max
- 
- ###### Three Dimensional Investigations
- 
- 
- 
- ##### Analysis and Summary of the Iris Dataset
+This project has examined the key statistics of the attributes for the Iris flower dataset such as the mean, median and standard deviation for all the data and also the individual species. Boxplots to further investigate how each distribution of the attributes (sepal length, sepal width, petal length and petal width) compared across the three species (iris sertosa, iris virginica, iris versicolor).  
 
 
 You need to 
-1.	Research ways to tackle the project
-2.	Research background information
-3.	Summaries the background data set
+1.	Research ways to tackle the project - done
+2.	Research background information -done
+3.	Summaries the background data set - done
 4.	Keep a reference list on all sources used in the project
-5.	Download the data set
+5.	Download the data set -done
 6.	Write some code to investigate it
 7.	Summarise the date set: 
 8.	maximum, minimum and mean of each column of the data set
@@ -109,8 +88,6 @@ https://www.dataquest.io/blog/pandas-python-tutorial/
 
 
 http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf
-
-https://archive.ics.uci.edu/ml/datasets/Iris
 
 https://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dsintro
 
