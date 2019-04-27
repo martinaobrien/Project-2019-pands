@@ -43,11 +43,11 @@ Standard deviation - a measure expressing the difference between numerical value
 
 minimum, 25%, 50%, 75% maximum values - the corresponding values of each of the attributes in each column
 
-Median: 
+Median: A measure of the centre for a distribution of a numeric variable. It splits the data in half with half the observations above and below. 
 
 ### Key points
 Mean and Median: 
-As 
+Initial analysis would suggest that the central points for the sepal length and sepal width are less than .1, suggesting the mean and median are quite similiar. The difference between the mean and median are more pronounced in the petal length and petal width, greater that .5.
 
 
 
