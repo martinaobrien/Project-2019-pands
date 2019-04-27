@@ -15,7 +15,9 @@ Two species of the data set were collected in the Gasle Pennisula, Quebec Canada
 
 Using python programming tools, this project will analyse, summise and visualise key invetigates using a number of packages. These include: 
   pandas - Installed from: https://anaconda.org/anaconda/pandas
+  
   matplotlib - Installed from: https://anaconda.org/conda-forge/matplotlib
+  
   numpy - Installed from: https://anaconda.org/anaconda/numpy
   
   Iris dataset ws downloaded from: http://www.saedsayad.com/datasets/Iris.xls. the file was then converted in to a .csv file for use in this project.
@@ -32,10 +34,20 @@ Shape of the Iris Dataset - number of individual samples and the number of chara
 
 Overview of key statistics of the Irisset
 This table displays the following analysis for all of the data entries combined:
+
 Count - the total count of each value recorded. All counts are 150 representing a complete dataset and no null or void entries. 
+
 Mean - A measure of the centre for a distribution of a numeric variable. The total of all values divided bu the total number of values
+
 Standard deviation - a measure expressing the difference between numerical values and the mean of the category
+
 minimum, 25%, 50%, 75% maximum values - the corresponding values of each of the attributes in each column
+
+Median: 
+
+### Key points
+Mean and Median: 
+As 
 
 
 
