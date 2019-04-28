@@ -48,32 +48,31 @@ print(' ')
 print('------------------------------------------------------------------------------------------------------------')
 print(' ')
 
-df1 = iris_data[iris_data['iris'].str.contains("Iris-setosa")] 
-df1_mean = df1.mean()
-df1_describe = df1.describe()
-print('Iris-setosa mean')
-print(' ')
-print(df1_mean)
-
-print(' ')
-print('------------------------------------------------------------------------------------------------------------')
-print(' ')
-
 print ('Maximum and Minimum of the Dataset')
-df = iris_data
-print (df.max()) # will return max value of each column
-print (df.min())
+
+print(' ')
+print('Min ')
+print(iris_data.groupby('iris').min())
+print(' ')
+print('Max ')
+print(iris_data.groupby('iris').max())
 
 print(' ')
 print('------------------------------------------------------------------------------------------------------------')
 print(' ')
 
-#title="Compare the Distributions of Sepal Width"
-#sns.boxplot(x="iris", y="sepal width", data=iris_data)
+
+print(' ')
+print('------------------------------------------------------------------------------------------------------------')
+print(' ')
+
+
+title="Compare the Distributions of Sepal Width"
+sns.boxplot(x="iris", y="sepal width", data=iris_data)
 # increasing font size
-#plt.title(title, fontsize=26)
-# Show the plot
-#plt.show()
+plt.title(title, fontsize=26)
+Show the plot
+plt.show()
 
 
 
