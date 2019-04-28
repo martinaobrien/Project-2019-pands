@@ -55,6 +55,8 @@ To investigate this further, the max and min functions were used to identify the
 
 The mean and median of the attributes were also calculated as calculating the centre points for the data are important in exploing predictors. Initial analysis would suggest that the central points for the sepal length and sepal width are less than .1, suggesting the mean and median are quite similiar. The difference between the mean and median are more pronounced in the petal length and petal width, greater that .5. This suggests that the data on petal lengths and petal widths may prove to be more indicative of the data entries species. 
 
+To further visualise this data, Figure 1.0 "Plotting Petal Length vs Petal Width & Sepal Length vs Sepal width" demonstrates the spread of sepal sizes and petal sizes across the whole data set. (viii). The findings from the mean were further enhanced by classifying the data into the 3 species. 
+
 Ascertaining the centre properties of each of the attributes for each species is central to establishing patterns. The next Boxplots to further investigate how each distribution of the attributes (sepal length, sepal width, petal length and petal width) compared across the three species (iris sertosa, iris virginica, iris versicolor). 
 
 
@@ -90,6 +92,7 @@ https://www.ritchieng.com/machine-learning-iris-dataset/
 https://payatu.com/wp-content/uploads/2018/04/Selection_004.png
 https://www.dataquest.io/blog/pandas-python-tutorial/
 http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf
+https://www.oreilly.com/library/view/python-data-science/9781491912126/ch04.html
 
 http://statweb.stanford.edu/~jtaylo/courses/stats202/visualization.html
 
