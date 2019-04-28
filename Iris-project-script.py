@@ -89,13 +89,97 @@ plt.savefig(filename)
 print(' ')
 print('------------------------------------------------------------------------------------------------------------')
 print(' ')
+print ('Analysis of Max values across sepcies and attributes')
+print('Species Name')
+print(' ')
+print(iris_data['iris'].unique()) #3 types of species are considered unique and used to distinguish numberical categories
 
+iris_max = iris_data.groupby('iris').max()
+
+iris_max.plot.bar()
+plt.gcf().subplots_adjust(bottom=0.15)
+
+plt.xlabel('Species', fontsize=18, weight='bold', rotation=180)
+plt.ylabel("Mean Values", fontsize=18, weight='bold')
+
+title = "Max Value of Attributes in Iris dataset"
+
+filename = "Max Value of Attributes in Iris dataset.jpg"
+
+plt.title(title, fontsize=26, weight='bold')
+
+plt.show()
+
+filename = "Max of Attributes in Iris dataset.jpg"
+plt.savefig(filename)
 
 print(' ')
 print('------------------------------------------------------------------------------------------------------------')
 print(' ')
 
+print ('Analysis of Min values across sepcies and attributes')
+print('Species Name')
+print(' ')
+print(iris_data['iris'].unique()) #3 types of species are considered unique and used to distinguish numberical categories
 
+iris_min = iris_data.groupby('iris').min()
+
+iris_min.plot.bar()
+plt.gcf().subplots_adjust(bottom=0.15)
+
+plt.xlabel('Species', fontsize=18, weight='bold', rotation=180)
+plt.ylabel("Minimum Values", fontsize=18, weight='bold')
+
+title = "Min Value of Attributes in Iris dataset"
+
+filename = "Min Value of Attributes in Iris dataset.jpg"
+
+plt.title(title, fontsize=26, weight='bold')
+
+plt.show()
+
+filename = "Min of Attributes in Iris dataset.jpg"
+plt.savefig(filename)
+
+print(' ')
+print('------------------------------------------------------------------------------------------------------------')
+print(' ')
+
+#Plotting Petal Length vs Petal Width & Sepal Length vs Sepal width
+#warnings.simplefilter("ignore")#Supress any warning
+
+plt.figure()
+fig,ax=plt.subplots(1,2,figsize=(17, 9))
+iris_data.plot(x="sepal length",y="sepal width",kind="scatter",ax=ax[0],sharex=False,sharey=False,label="sepal",color='r')
+iris_data.plot(x="petal length",y="petal width",kind="scatter",ax=ax[1],sharex=False,sharey=False,label="petal",color='b')
+ax[0].set(title='Sepal comparasion ', ylabel='sepal-width')
+ax[1].set(title='Petal Comparasion',  ylabel='petal-width')
+ax[0].legend()
+ax[1].legend()
+plt.show()
+plt.close()
+
+# we can see that  there are some petals which are smaller than rest of petal.
+#Let's examine them
+
+plt.figure()
+fig,ax=plt.subplots(1,2,figsize=(21, 10))
+
+setosa.plot(x="sepal length", y= "sepal width", kind="scatter",ax=ax[0],label='setosa',color='r')
+versicolor.plot(x="sepal length",y="sepal width",kind="scatter",ax=ax[0],label='versicolor',color='b')
+virginica.plot(x="sepal length", y="sepal width", kind="scatter", ax=ax[0], label='virginica', color='g')
+
+setosa.plot(x="petal length", y="petal-width", kind="scatter",ax=ax[1],label='setosa',color='r')
+versicolor.plot(x="petal length",y="petal-width",kind="scatter",ax=ax[1],label='versicolor',color='b')
+virginica.plot(x="petal length", y="petal-width", kind="scatter", ax=ax[1], label='virginica', color='g')
+
+ax[0].set(title='Sepal comparasion ', ylabel='sepal-width')
+ax[1].set(title='Petal Comparasion',  ylabel='petal-width')
+ax[0].legend()
+ax[1].legend()
+
+plt.show()
+plt.close()
 
 print(' ')
 print('------------------------------------------------------------------------------------------------------------')
