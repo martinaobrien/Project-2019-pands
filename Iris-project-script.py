@@ -158,35 +158,57 @@ all above this line works
 title="Compare the Distributions of Sepal Length"
 sns.boxplot(x="Species", y="sepal length", data=iris_data)
 # increasing font size
-plt.title(title, fontsize=26)
-# Show the plot
+plt.title(title, fontsize=26, weight='bold')
+plt.gcf().subplots_adjust(bottom=0.3)
+plt.xlabel('Species', fontsize=18, weight='bold')
+plt.ylabel("Sepal Length", fontsize=18, weight='bold')
+filename = "Compare the Distributions of Sepal Length"
 plt.show()
+plt.savefig(filename)
+plt.close()
+print(' ')
 
 
 title="Compare the Distributions of Sepal Width"
 sns.boxplot(x="Species", y="sepal width", data=iris_data)
 # increasing font size
-plt.title(title, fontsize=26)
-# Show the plot
+plt.title(title, fontsize=26, weight='bold')
+plt.gcf().subplots_adjust(bottom=0.3)
+plt.xlabel('Species', fontsize=18, weight='bold')
+plt.ylabel("Width", fontsize=18, weight='bold')
+filename = "Compare the Distributions of Sepal Width"
 plt.show()
-
+plt.savefig(filename)
+plt.close()
+print(' ')
 # ----------------------------------------------------------------------------------------------------------------
 
 title="Compare the Distributions of Petal Length"
 sns.boxplot(x="Species", y="petal length", data=iris_data)
-# increasing font size
-plt.title(title, fontsize=26)
-# Show the plot
+plt.title(title, fontsize=26, weight='bold')
+plt.gcf().subplots_adjust(bottom=0.3)
+plt.xlabel('Species', fontsize=18, weight='bold')
+plt.ylabel("Petal Length", fontsize=18, weight='bold')
+filename = "Compare the Distributions of Petal Length"
 plt.show()
+plt.savefig(filename)
+plt.close()
+print(' ')
 
 # ---------------------------------------------------------------------------------------------------------------
 
 title="Compare the distributions of Petal Width"
 sns.boxplot(x="Species", y="petal width", data=iris_data)
 # increasing font size
-plt.title(title, fontsize=26)
-# Show the plot
+plt.title(title, fontsize=26, weight='bold')
+plt.gcf().subplots_adjust(bottom=0.3)
+plt.xlabel('Species', fontsize=18, weight='bold')
+plt.ylabel("Petal Width", fontsize=18, weight='bold')
+filename = "Compare the Distributions of Petal Width"
 plt.show()
+plt.savefig(filename)
+plt.close()
+print(' ')
 
 
 '''
