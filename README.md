@@ -25,13 +25,13 @@ Using python programming tools, this project will analyse, summise and visualise
   
   Iris dataset ws downloaded from: http://www.saedsayad.com/datasets/Iris.xls. the file was then converted in to a .csv file for use in this project.
   
-####  Investigations on the Iris Data Set:
+#### Investigations on the Iris Data Set:
 
 Importing the dataset: 
 
 The dataset was imported using the pandas module as a csv file (vi). The dataset was imported into this repository for this project. Several investigations were carried out to provide an insight in the dataset. The data is visulaised using tables and bar charts initially to provide the user with a high level overview of the dataset. The latter graphics include scatterplots and dotplots that provide a much more indepth view. 
 
-#####List of Investigations: 
+##### List of Investigations: 
 
 These are intended to inform the user about the contact and key attributes of the data using the shape function. This investigation is accompanied by a brief description of the investigation. A full list of the graphs outputted from the program code can be found at the end of this section. 
 
@@ -59,7 +59,7 @@ Minimum, Maximum, Mean and Median of each attribute for each species in dataset.
 
 
 
-#####List of Graphs: 
+##### List of Graphs: 
 
 Graph 1: Min of Attributes in Dataset
 
@@ -94,28 +94,6 @@ To further visualise this data, Figure 1.0 "Plotting Petal Length vs Petal Width
 Ascertaining the centre properties of each of the attributes for each species is central to establishing patterns. The next Boxplots to further investigate how each distribution of the attributes (sepal length, sepal width, petal length and petal width) compared across the three species (iris sertosa, iris virginica, iris versicolor). It also identifies any outliers that may serve to skew the data. In this instance, there are very little outliers to be found in the data but due to the distance between the outliers and the centre in the boxplot, the mean figures may be skewed. 
 
 Another interesting point to not that three out the four attributes seem to follow a loose pattern according to the graphs generating boxplots on the distribution of each of the attributes in relation to the type of flower. In the case of petal length, petal width and sepal length, there is an increase in sixe from sertosa to versicolor to virgininca. The difference between them is more pronounced in the petal attributes, a fact that is correlated in Graph 9. 
-
-You need to 
-1.	Research ways to tackle the project - done
-2.	Research background information -done
-3.	Summaries the background data set - done
-4.	Keep a reference list on all sources used in the project
-5.	Download the data set -done
-6.	Write some code to investigate it
-7.	Summarise the date set: 
-8.	maximum, minimum and mean of each column of the data set
-9.	Write a summary of the investigatations using python
-10.	Supporting Tables - labelled
-11.	Graphics  - relevant
-
-Train of thought: 
- •	Investigate and explain the data set to someone with no prior knowledge of the data
-•	Explain what investigating the data set entails and how Python can be used to do it
-•	Present a write up and code
-•	Well organised and detailed explanations
-•	Well conceived and examples of interesting analysis that others have pursued
-
-
 
 #### References: 
 i. http://rcs.chemometrics.ru/Tutorials/classification/Fisher.pdf
