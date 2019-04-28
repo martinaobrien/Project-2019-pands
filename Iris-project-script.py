@@ -66,23 +66,9 @@ print(' ')
 print('------------------------------------------------------------------------------------------------------------')
 print(' ')
 
+import matplotlib.pyplot as plt
+import pandas
 
-title="Compare the Distributions of Sepal Width"
-sns.boxplot(x="iris", y="sepal width", data=iris_data)
-# increasing font size
-plt.title(title, fontsize=26)
-Show the plot
-plt.show()
-
-
-
-#for i in iris_data['iris'].unique():
-#build_list = iris_data['iris'] == i
-#species = iris_data[build_list]
-#print('\n', i, '\n', species.describe(), '\n')
-    #for j in ['sepal length', 'sepal width', 'petal length', 'petal width']:
-       # title = i
-        #plt.title(title)
-        #x = species[j]
-        #sns.distplot(x)
-    #    plt.show()
+data = iris_data()
+fig, ax = plt.subplots()
+data['sepal width'].value_counts().plot(ax=ax, kind='bar')
