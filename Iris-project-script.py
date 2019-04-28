@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 iris_data = pd.read_csv("Iris-data-set.csv") #setting up a variable for use in the program
 
 iris_data.columns = ['sepal length', 'sepal width', 'petal length', 'petal width', 'Species']
-
+sns.set(style="whitegrid", rc={'figure.figsize':(10,6)}) #sns.set is helping to set up the display box that you will be showing your graph in.
+'''
 print(' ')
 
 print ("Investagations on Iris Dataset")
@@ -46,7 +47,7 @@ print(' ')
 print('------------------------------------------------------------------------------------------------------------')
 print(' ')
 
-print('Iris Median of attributes from Iris Dataset of all 150 records') #this is an additional analysis conducted on the centre points of the data source: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.median.html
+print('Median of attributes from Iris Dataset of all 150 records') #this is an additional analysis conducted on the centre points of the data source: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.median.html
 print(' ')
 print(iris_data.median()) #Print the median of each of the attributes in tabular form
 
@@ -55,16 +56,142 @@ print('-------------------------------------------------------------------------
 print(' ')
 
 
-print ('Minimum and Maximum of the Dataset') #the following analysis looks at the maximum and minimum of each of the numerical categories
+print ('Minimum, Maximum and Mean of each attribute for each species in dataset') #the following analysis looks at the maximum and minimum of each of the numerical categories
 print(' ')
 
 print('Min ') # Extracts the minimum values of each of the attributes 
 print(iris_data.groupby('Species').min()) # Prints in tabular form
+
+#Graph variables set up for bar chart to be displayed and saved into the repository
+iris_min = iris_data.groupby('Species').min()
+iris_min.plot.bar()
+plt.gcf().subplots_adjust(bottom=0.15)
+plt.xlabel('Species', fontsize=18, weight='bold')
+plt.ylabel("Min Values", fontsize=18, weight='bold')
+title = "Min Value of Attributes in Iris dataset"
+filename = "Min Value of Attributes in Iris dataset.jpg"
+plt.title(title, fontsize=26, weight='bold')
+plt.gcf().subplots_adjust(bottom=0.3)
+plt.show()
+plt.close()
+filename = "Min of Attributes in Iris dataset.jpg"
+plt.savefig(filename)
+plt.close()
 print(' ')
 
 
-print('Max ')  # Extracts the maximum values of each of the attributes 
+print('Max')  # Extracts the maximum values of each of the attributes 
 print(iris_data.groupby('Species').max()) # Prints in tabular form
+
+#Graph variables set up for bar chart to be displayed and saved into the repository
+iris_max = iris_data.groupby('Species').max()
+iris_max.plot.bar()
+plt.gcf().subplots_adjust(bottom=0.15)
+plt.xlabel('Species', fontsize=18, weight='bold')
+plt.ylabel("Max Values", fontsize=18, weight='bold')
+title = "Max Value of Attributes in Iris dataset"
+filename = "Max Value of Attributes in Iris dataset.jpg"
+plt.title(title, fontsize=26, weight='bold')
+plt.gcf().subplots_adjust(bottom=0.3)
+plt.show()
+plt.close()
+filename = "Max of Attributes in Iris dataset.jpg"
+plt.savefig(filename)
+plt.close()
+print(' ')
+
+
+print('Mean')  # Extracts the maximum values of each of the attributes 
+print(iris_data.groupby('Species').mean()) # Prints in tabular form
+print(' ')
+
+#Graph variables set up for bar chart to be displayed and saved into the repository
+iris_mean = iris_data.groupby('Species').mean()
+iris_mean.plot.bar()
+plt.gcf().subplots_adjust(bottom=0.15)
+plt.xlabel('Species', fontsize=18, weight='bold')
+plt.ylabel("Mean Values", fontsize=18, weight='bold')
+title = "Mean Value of Attributes in Iris dataset"
+filename = "Mean Value of Attributes in Iris dataset.jpg"
+plt.title(title, fontsize=26, weight='bold')
+plt.gcf().subplots_adjust(bottom=0.3)
+plt.show()
+plt.close()
+filename = "Mean of Attributes in Iris dataset.jpg"
+plt.savefig(filename)
+plt.close()
+print(' ')
+
+print('Median')  # Extracts the median values of each of the attributes 
+print(iris_data.groupby('Species').median()) # Prints in tabular form
+print(' ')
+
+
+
+#Graph variables set up for bar chart to be displayed and saved into the repository
+iris_median = iris_data.groupby('Species').median()
+iris_median.plot.bar()
+plt.gcf().subplots_adjust(bottom=0.15)
+plt.xlabel('Species', fontsize=18, weight='bold')
+plt.ylabel("Median Values", fontsize=18, weight='bold')
+title = "Median Value of Attributes in Iris dataset"
+filename = "Median Value of Attributes in Iris dataset.jpg"
+plt.title(title, fontsize=26, weight='bold')
+plt.gcf().subplots_adjust(bottom=0.3)
+plt.show()
+plt.close()
+filename = "Median of Attributes in Iris dataset.jpg"
+plt.savefig(filename)
+plt.close()
+print(' ')
+
+Print 'This is a summary of all species and their attributes'
+for i in iris_data['Species'].unique():
+    build_list = iris_data['Species'] == i
+    species = iris_data[build_list]
+    print('\n', i, '\n', species.describe(), '\n')
+    
+all above this line works
+----------------------------------------------------------------------------------------------------------
+'''
+
+title="Compare the Distributions of Sepal Length"
+sns.boxplot(x="Species", y="sepal length", data=iris_data)
+# increasing font size
+plt.title(title, fontsize=26)
+# Show the plot
+plt.show()
+
+
+title="Compare the Distributions of Sepal Width"
+sns.boxplot(x="Species", y="sepal width", data=iris_data)
+# increasing font size
+plt.title(title, fontsize=26)
+# Show the plot
+plt.show()
+
+# ----------------------------------------------------------------------------------------------------------------
+
+title="Compare the Distributions of Petal Length"
+sns.boxplot(x="Species", y="petal length", data=iris_data)
+# increasing font size
+plt.title(title, fontsize=26)
+# Show the plot
+plt.show()
+
+# ---------------------------------------------------------------------------------------------------------------
+
+title="Compare the distributions of Petal Width"
+sns.boxplot(x="Species", y="petal width", data=iris_data)
+# increasing font size
+plt.title(title, fontsize=26)
+# Show the plot
+plt.show()
+
+
+'''
+# not working yet
+
 
 #Importing seaborn to give more data visualisation properties to the dataset e.g. grids, barcharts, histogram and adding features such as legend, assign colour to doeeference attributes
 sns.set(style="whitegrid", rc={'figure.figsize':(10,6)}) #sns.set is helping to set up the display box that you will be showing your graph in.
@@ -75,10 +202,7 @@ print('Species Name')
 print(' ')
 print(iris_data['Species'].unique()) #3 types of species are considered unique and used to distinguish numberical categories
 
-iris_mean = iris_data.groupby('Species').mean()
 
-iris_mean.plot.bar()
-plt.gcf().subplots_adjust(bottom=0.15)
 
 plt.xlabel('Species', fontsize=18, weight='bold', rotation=180)
 plt.ylabel("Mean Values", fontsize=18, weight='bold')
@@ -104,21 +228,14 @@ print(' ')
 print(iris_data['Species'].unique()) #3 types of species are considered unique and used to distinguish numberical categories
 
 iris_max = iris_data.groupby('Species').max()
-
 iris_max.plot.bar()
 plt.gcf().subplots_adjust(bottom=0.15)
-
 plt.xlabel('Species', fontsize=18, weight='bold', rotation=180)
 plt.ylabel("Mean Values", fontsize=18, weight='bold')
-
 title = "Max Value of Attributes in Iris dataset"
-
 filename = "Max Value of Attributes in Iris dataset.jpg"
-
 plt.title(title, fontsize=26, weight='bold')
-
 plt.show()
-
 filename = "Max of Attributes in Iris dataset.jpg"
 plt.savefig(filename)
 
@@ -190,3 +307,4 @@ ax[1].legend()
 plt.show()
 plt.close()
 
+'''
