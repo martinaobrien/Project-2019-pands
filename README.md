@@ -26,18 +26,22 @@ Using python programming tools, this project will analyse, summise and visualise
   Iris dataset ws downloaded from: http://www.saedsayad.com/datasets/Iris.xls. the file was then converted in to a .csv file for use in this project.
   
 ##### Investigations on the Iris Data Set:
- 
+
+The following sections contains the and alongwith a
 Importing the dataset: 
 
 The dataset was imported using the pandas module as a csv file (vi). The dataset was imported into this repository for this project. Several investigations were carried out to provide an insight in the dataset. The data is visulaised using tables and bar charts initially to provide the user with a high level overview of the dataset. The latter graphics include scatterplots and dotplots that provide a much more indepth view. 
 
 Initial Investigations: 
 
-The following is a list of investigations conducted on the Iris dataset. These are intended to inform the user about the contact and key attributes of the data using the shape function.
+The following is a list of investigations conducted on the Iris dataset. These are intended to inform the user about the contact and key attributes of the data using the shape function. This investigation is accompanied by a brief description of the investigation. A full list of the graphs outputted from the program code can be found at the end of this section. 
 
 Shape of the Iris Dataset - number of individual samples and the number of charateristics contained in the set and gives the highest level of information about the date using the random function.
 
-Overview of key statistics of the Irisset
+Species Name: The purpose is to identify the three types of Iris species included in the dataset
+
+Overview of key statistics of the Iris dataset: To provide a high level statistics to the user
+
 This table displays the following analysis for all of the data entries combined:
 
 Count - the total count of each value recorded. All counts are 150 representing a complete dataset and no null or void entries. 
@@ -48,9 +52,23 @@ Standard deviation - a measure expressing the difference between numerical value
 
 minimum, 25%, 50%, 75% maximum values - the corresponding values of each of the attributes in each column
 
-Median: A measure of the centre for a distribution of a numeric variable. It splits the data in half with half the observations above and below. 
+Median: A measure of the centre for a distribution of a numeric variable. It splits the data in half with half the observations above and below.
 
-List of Graphs and Tables: 
+Sample of Data contained in the Iris Dataset of all 150 records. The table aims to give a sample of the data but is locked at 5 entries
+
+Minimum, Maximum, Mean and Median of each attribute for each species in dataset. This is done for each of the attributes: sepal length, sepal width, petal length and petal width across all species. 
+
+
+List of Graphs: 
+
+Graph 1: Min of Attributes in Dataset
+Graph 2: Max of Attributes in Dataset
+Graph 3. Mean of Attributes in Dataset
+Graph 4: Median of Attributes in Dataset
+Graph 5:
+Graph 6:
+Graph 7
+
 
 
 
@@ -62,9 +80,11 @@ To investigate this further, the max and min functions were used to identify the
 
 The mean and median of the attributes were also calculated as calculating the centre points for the data are important in exploing predictors. Initial analysis would suggest that the central points for the sepal length and sepal width are less than .1, suggesting the mean and median are quite similiar. The difference between the mean and median are more pronounced in the petal length and petal width, greater that .5. This suggests that the data on petal lengths and petal widths may prove to be more indicative of the data entries species. 
 
-To further visualise this data, Figure 1.0 "Plotting Petal Length vs Petal Width & Sepal Length vs Sepal width" demonstrates the spread of sepal sizes and petal sizes across the whole data set. (viii). The findings from the mean were further enhanced by classifying the data into the 3 species. 
+To further visualise this data, Figure 1.0 "Plotting Petal Length vs Petal Width & Sepal Length vs Sepal width" demonstrates the spread of sepal sizes and petal sizes across the whole data set. (viii). 
 
-Ascertaining the centre properties of each of the attributes for each species is central to establishing patterns. The next Boxplots to further investigate how each distribution of the attributes (sepal length, sepal width, petal length and petal width) compared across the three species (iris sertosa, iris virginica, iris versicolor). 
+Ascertaining the centre properties of each of the attributes for each species is central to establishing patterns. The next Boxplots to further investigate how each distribution of the attributes (sepal length, sepal width, petal length and petal width) compared across the three species (iris sertosa, iris virginica, iris versicolor). It also identifies any outliers that may serve to skew the data. In this instance, there are very little outliers to be found in the data. 
+
+It is clear from the data, that the petal charateristics are very distinct for the iris se
 
 
 
@@ -103,8 +123,9 @@ https://www.oreilly.com/library/view/python-data-science/9781491912126/ch04.html
 
 http://statweb.stanford.edu/~jtaylo/courses/stats202/visualization.html
 
-f
 
+https://seaborn.pydata.org/generated/seaborn.boxplot.html
+f
 https://www.shanelynn.ie/select-pandas-dataframe-rows-and-columns-using-iloc-loc-and-ix/
 
 https://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dsintro
