@@ -8,10 +8,15 @@ import matplotlib.pyplot as plt
 
 iris_data = pd.read_csv("Iris-data-set.csv") #setting up a variable for use in the program
 
-iris_data.columns = ['sepal length', 'sepal width', 'petal length', 'petal width', 'iris']
+iris_data.columns = ['sepal length', 'sepal width', 'petal length', 'petal width', 'Species']
+
 print(' ')
 
 print ("Investagations on Iris Dataset")
+
+print('Species Name')
+print(' ')
+print(iris_data['Species'].unique()) #prints out the three types of iris species captured
 
 print(' ')
 print('------------------------------------------------------------------------------------------------------------')
@@ -21,11 +26,12 @@ print('Shape of the Iris Dataset')# Provides an overview of the data captured an
 print(' ')
 print(iris_data.shape) #Prints the number of data entries in the data set along with number of the attributes
 
+
 print(' ')
 print('------------------------------------------------------------------------------------------------------------')
 print(' ')
 
-print ('Sample of Data contained in the Iris Dataset')# random sample of the dataset. source: https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.sample.html
+print ('Sample of Data contained in the Iris Dataset of all 150 records')# random sample of the dataset. source: https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.sample.html
 print (iris_data.sample (5)) #Prints 5 complete data entries from the set at random
 x = iris_data.sample(5)
 
@@ -33,14 +39,14 @@ print(' ')
 print('------------------------------------------------------------------------------------------------------------')
 print(' ')
 
-print ("Summary of Key Statistics from Iris Dataset") # generates statistical analysis of the features of the measures of centre points and distribution of values source:https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
+print ("Summary of Key Statistics from Iris Dataset of all 150 records") # generates statistical analysis of the features of the measures of centre points and distribution of values source:https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
 print (iris_data.describe()) #Prints in tabular from key statistics from the data to provide high level analysis for the user
 
 print(' ')
 print('------------------------------------------------------------------------------------------------------------')
 print(' ')
 
-print('Iris Median') #this is an additional analysis conducted on the centre points of the data source: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.median.html
+print('Iris Median of attributes from Iris Dataset of all 150 records') #this is an additional analysis conducted on the centre points of the data source: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.median.html
 print(' ')
 print(iris_data.median()) #Print the median of each of the attributes in tabular form
 
@@ -48,14 +54,17 @@ print(' ')
 print('------------------------------------------------------------------------------------------------------------')
 print(' ')
 
-print ('Minimum and Maximum of the Dataset') #the following analysis looks at the maximum and minimum of each of the numerical categories
 
+print ('Minimum and Maximum of the Dataset') #the following analysis looks at the maximum and minimum of each of the numerical categories
 print(' ')
+
 print('Min ') # Extracts the minimum values of each of the attributes 
-print(iris_data.groupby('iris').min()) # Prints in tabular form
+print(iris_data.groupby('Species').min()) # Prints in tabular form
 print(' ')
+
+
 print('Max ')  # Extracts the maximum values of each of the attributes 
-print(iris_data.groupby('iris').max()) # Prints in tabular form
+print(iris_data.groupby('Species').max()) # Prints in tabular form
 
 #Importing seaborn to give more data visualisation properties to the dataset e.g. grids, barcharts, histogram and adding features such as legend, assign colour to doeeference attributes
 sns.set(style="whitegrid", rc={'figure.figsize':(10,6)}) #sns.set is helping to set up the display box that you will be showing your graph in.
@@ -64,9 +73,9 @@ file = open('test_write.py', 'a+') #opens a file in end repository to save graph
 print ('Analysis of Mean values across sepcies and attributes')
 print('Species Name')
 print(' ')
-print(iris_data['iris'].unique()) #3 types of species are considered unique and used to distinguish numberical categories
+print(iris_data['Species'].unique()) #3 types of species are considered unique and used to distinguish numberical categories
 
-iris_mean = iris_data.groupby('iris').mean()
+iris_mean = iris_data.groupby('Species').mean()
 
 iris_mean.plot.bar()
 plt.gcf().subplots_adjust(bottom=0.15)
@@ -92,9 +101,9 @@ print(' ')
 print ('Analysis of Max values across sepcies and attributes')
 print('Species Name')
 print(' ')
-print(iris_data['iris'].unique()) #3 types of species are considered unique and used to distinguish numberical categories
+print(iris_data['Species'].unique()) #3 types of species are considered unique and used to distinguish numberical categories
 
-iris_max = iris_data.groupby('iris').max()
+iris_max = iris_data.groupby('Species').max()
 
 iris_max.plot.bar()
 plt.gcf().subplots_adjust(bottom=0.15)
@@ -120,9 +129,9 @@ print(' ')
 print ('Analysis of Min values across sepcies and attributes')
 print('Species Name')
 print(' ')
-print(iris_data['iris'].unique()) #3 types of species are considered unique and used to distinguish numberical categories
+print(iris_data['Species'].unique()) #3 types of species are considered unique and used to distinguish numberical categories
 
-iris_min = iris_data.groupby('iris').min()
+iris_min = iris_data.groupby('Species').min()
 
 iris_min.plot.bar()
 plt.gcf().subplots_adjust(bottom=0.15)
@@ -181,6 +190,3 @@ ax[1].legend()
 plt.show()
 plt.close()
 
-print(' ')
-print('------------------------------------------------------------------------------------------------------------')
-print(' ')
