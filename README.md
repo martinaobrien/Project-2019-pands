@@ -27,7 +27,7 @@ Using python programming tools, this project will analyse, summise and visualise
   
 #### Investigations on the Iris Data Set:
 
-Importing the dataset: 
+#####Importing the dataset: 
 
 The dataset was imported using the pandas module as a csv file (vi). The dataset was imported into this repository for this project. Several investigations were carried out to provide an insight in the dataset. The data is visulaised using tables and bar charts initially to provide the user with a high level overview of the dataset. The latter graphics include scatterplots and dotplots that provide a much more indepth view. 
 
@@ -59,7 +59,9 @@ Minimum, Maximum, Mean and Median of each attribute for each species in dataset.
 
 
 
-##### List of Graphs: 
+##### List of Graphs:
+
+Graphs are available in folder once the program is executed
 
 Graph 1: Min of Attributes in Dataset
 
