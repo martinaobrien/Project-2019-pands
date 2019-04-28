@@ -14,7 +14,7 @@ sns.set(style="whitegrid", rc={'figure.figsize':(10,6)}) #sns.set is helping to 
 print(' ') #use of space to make the output more user friendly
 
 print ("Investigations on Iris Dataset") #Title of program being run
-
+print ("All Graphs within this program will be automatically saved in the folder for viewing")
 print('Species Name') # this programme is being run to allow the user to indentify the three types of iris flower in the dataset
 print(' ')
 print(iris_data['Species'].unique()) #prints out the three types of iris species captured
@@ -90,7 +90,6 @@ plt.gcf().subplots_adjust(bottom=0.15)
 plt.xlabel('Species', fontsize=18, weight='bold')
 plt.ylabel("Max Values", fontsize=18, weight='bold')
 title = "Max Value of Attributes in Iris dataset"
-filename = "Max Value of Attributes in Iris dataset.jpg"
 plt.title(title, fontsize=26, weight='bold')
 plt.gcf().subplots_adjust(bottom=0.3)
 #plt.show()
@@ -157,6 +156,8 @@ print(' ')
 
 print ("Distributions of Each Attributes")
 print(' ')
+print ("All Graphs within this program will be automatically saved in the folder for viewing")
+print(' ')
 title="Compare the Distributions of Sepal Length"
 sns.boxplot(x="Species", y="sepal length", data=iris_data) #the seaborn boxplot function enables comparison between the distributions of each attribute. Source: https://seaborn.pydata.org/generated/seaborn.boxplot.html
 plt.title(title, fontsize=26, weight='bold') # Further sources: https://python-graph-gallery.com/30-basic-boxplot-with-seaborn/
@@ -164,25 +165,20 @@ plt.gcf().subplots_adjust(bottom=0.3)
 plt.xlabel('Species', fontsize=18, weight='bold')
 plt.ylabel("Sepal Length", fontsize=18, weight='bold')
 filename = "Compare the Distributions of Sepal Length.jpg"
-#plt.show()
 plt.savefig(filename)
 plt.close()
 print(' ')
 
-
 title="Compare the Distributions of Sepal Width"
 sns.boxplot(x="Species", y="sepal width", data=iris_data)
-# increasing font size
 plt.title(title, fontsize=26, weight='bold')
 plt.gcf().subplots_adjust(bottom=0.3)
 plt.xlabel('Species', fontsize=18, weight='bold')
 plt.ylabel("Width", fontsize=18, weight='bold')
 filename = "Compare the Distributions of Sepal Width.jpg"
-#plt.show()
 plt.savefig(filename)
 plt.close()
 print(' ')
-# ----------------------------------------------------------------------------------------------------------------
 
 title="Compare the Distributions of Petal Length"
 sns.boxplot(x="Species", y="petal length", data=iris_data)
@@ -191,22 +187,17 @@ plt.gcf().subplots_adjust(bottom=0.3)
 plt.xlabel('Species', fontsize=18, weight='bold')
 plt.ylabel("Petal Length", fontsize=18, weight='bold')
 filename = "Compare the Distributions of Petal Length.jpg"
-#plt.show()
 plt.savefig(filename)
 plt.close()
 print(' ')
 
-# ---------------------------------------------------------------------------------------------------------------
-
 title="Compare the distributions of Petal Width"
 sns.boxplot(x="Species", y="petal width", data=iris_data)
-# increasing font size
 plt.title(title, fontsize=26, weight='bold')
 plt.gcf().subplots_adjust(bottom=0.3)
 plt.xlabel('Species', fontsize=18, weight='bold')
 plt.ylabel("Petal Width", fontsize=18, weight='bold')
 filename = "Compare the Distributions of Petal Width.jpg"
-#plt.show()
 plt.savefig(filename)
 plt.close()
 
@@ -215,6 +206,10 @@ print('-------------------------------------------------------------------------
 print(' ')
 
 print ("Correlation between the Sepal Characteristics and the Petal Characteristics to examine prediction factors")
+print ("All Graphs within this program will be automatically saved in the folder for viewing")
+print('Correlation OF ALL')
+print(iris_data.iloc[0:].corr())
+
 #Plotting Petal Length vs Petal Width & Sepal Length vs Sepal width
 plt.figure() #Source:https://www.kaggle.com/sridharcr/data-analysis-iris-dataset
 fig,ax=plt.subplots(1,2,figsize=(17, 9)) # Apadted from: https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
@@ -227,41 +222,8 @@ ax[1].set(xlabel='Petal Length')
 ax[0].legend()
 ax[1].legend()
 plt.gcf().subplots_adjust(bottom=0.3)
-#plt.show()
 filename = "Corellation between Petal Length vs Petal Width & Sepal Length vs Sepal width.jpg"
-#plt.show()
 plt.savefig(filename)
 plt.close()
 
-'''
-# not working yet
 
-print(' ')
-print('------------------------------------------------------------------------------------------------------------')
-print(' ')
-
-
-
-# we can see that  there are some petals which are smaller than rest of petal.
-#Let's examine them
-
-plt.figure()
-fig,ax=plt.subplots(1,2,figsize=(21, 10))
-
-setosa.plot(x="sepal length", y= "sepal width", kind="scatter",ax=ax[0],label='setosa',color='r')
-versicolor.plot(x="sepal length",y="sepal width",kind="scatter",ax=ax[0],label='versicolor',color='b')
-virginica.plot(x="sepal length", y="sepal width", kind="scatter", ax=ax[0], label='virginica', color='g')
-
-setosa.plot(x="petal length", y="petal-width", kind="scatter",ax=ax[1],label='setosa',color='r')
-versicolor.plot(x="petal length",y="petal-width",kind="scatter",ax=ax[1],label='versicolor',color='b')
-virginica.plot(x="petal length", y="petal-width", kind="scatter", ax=ax[1], label='virginica', color='g')
-
-ax[0].set(title='Sepal comparasion ', ylabel='sepal-width')
-ax[1].set(title='Petal Comparasion',  ylabel='petal-width')
-ax[0].legend()
-ax[1].legend()
-
-plt.show()
-plt.close()
-
-'''
