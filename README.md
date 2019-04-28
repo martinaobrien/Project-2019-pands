@@ -14,20 +14,25 @@ Two species of the data set were collected in the Gasle Pennisula, Quebec Canada
 ##### Prerequisites for the Project
 
 Using python programming tools, this project will analyse, summise and visualise key invetigates using a number of packages. These include (Python was installed through Anaconda so some packages were already av were avaiable to me): 
+  
   pandas - Installed from: https://anaconda.org/anaconda/pandas
   
   matplotlib - Installed from: https://anaconda.org/conda-forge/matplotlib
   
   numpy - Installed from: https://anaconda.org/anaconda/numpy
   
+  seaborn - Installed from: https://anaconda.org/anaconda/seaborn
+  
   Iris dataset ws downloaded from: http://www.saedsayad.com/datasets/Iris.xls. the file was then converted in to a .csv file for use in this project.
   
 ##### Investigations on the Iris Data Set:
  
 Importing the dataset: 
+
 The dataset was imported using the pandas module as a csv file (vi). The dataset was imported into this repository for this project. Several investigations were carried out to provide an insight in the dataset. The data is visulaised using tables and bar charts initially to provide the user with a high level overview of the dataset. The latter graphics include scatterplots and dotplots that provide a much more indepth view. 
 
 Initial Investigations: 
+
 The following is a list of investigations conducted on the Iris dataset. These are intended to inform the user about the contact and key attributes of the data using the shape function.
 
 Shape of the Iris Dataset - number of individual samples and the number of charateristics contained in the set and gives the highest level of information about the date using the random function.
@@ -44,6 +49,8 @@ Standard deviation - a measure expressing the difference between numerical value
 minimum, 25%, 50%, 75% maximum values - the corresponding values of each of the attributes in each column
 
 Median: A measure of the centre for a distribution of a numeric variable. It splits the data in half with half the observations above and below. 
+
+List of Graphs and Tables: 
 
 
 
